@@ -1,3 +1,6 @@
+import java.io.FileWriter;
+import java.io.IOException;
+
 public class PR73_UsersData {
     private int id;
     private String name;

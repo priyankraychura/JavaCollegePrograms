@@ -49,6 +49,7 @@ public class PR73_LogInForm {
 
                 if (enteredUsername.isEmpty() || enteredPassword.isEmpty()) {
                     label.setText("Username or password is empty");
+                    JOptionPane.showMessageDialog(loginFrame, "Username or password is empty!");
                     return;
                 }
 
@@ -56,6 +57,7 @@ public class PR73_LogInForm {
                 for (int i = 0; i < 4; i++) {
                     if (enteredUsername.equals(users[i].getName()) && enteredPassword.equals(users[i].getPassword())) {
                         isAuthenticated = true;
+                        JOptionPane.showMessageDialog(loginFrame, "LogIn Successfull!");
                         JFrame welcomeFrame = new JFrame("Welcome " + enteredUsername);
                         JLabel welcomeLabel = new JLabel("Welcome, " + enteredUsername + "!");
                         welcomeLabel.setBounds(10, 5, 250, 80);
@@ -72,6 +74,7 @@ public class PR73_LogInForm {
 
                 if (!isAuthenticated) {
                     label.setText("Incorrect username or password");
+                    JOptionPane.showMessageDialog(loginFrame, "Incorrect username or password!");
                     text.setText("");
                     value.setText("");
                 }
