@@ -2,7 +2,7 @@ import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-public interface PR72_SimpleList {
+public class PR72_SimpleList {
     public static void main(String[] args) {
         JFrame frame = new JFrame("List Example");
         String[] fruits = {"Apple", "Banana", "Orange", "Grapes"};
