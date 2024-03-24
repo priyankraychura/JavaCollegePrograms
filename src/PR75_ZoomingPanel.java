@@ -12,7 +12,6 @@ public class PR75_ZoomingPanel extends JPanel implements MouseWheelListener {
         addMouseWheelListener(this);
     }
 
-
     @Override
     public void paintComponent(Graphics g){
         super.paintComponent(g);
